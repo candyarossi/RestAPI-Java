@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class InfoApi {
 	private final static String url = "https://api.rawg.io/api/games";
-	private final static String key = "93ef47d179ac48f98cfa82c6e7b2ac06";
+	private final static String key = "";
 
 	public static ArrayList<Videojuego> get10Videogames(int page) throws Exception {
 		String resultado = convertInfoAPIToString(InfoApi.url + "?key=" + InfoApi.key + "&page_size=6&page=" + page);
